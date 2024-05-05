@@ -1,7 +1,7 @@
 import turtle
 import pygame
 
-expressions = ["placeholdler.gif", "placeholder2.gif", "placeholder3.gif", "placeholder4.gif"]
+expressions = ["placeholder.gif", "placeholder2.gif", "placeholder3.gif", "placeholder4.gif"]
 count = 0
 
 display = turtle.Screen()
@@ -9,10 +9,10 @@ display.title("Cat Expression!") #Title of program
 display.bgcolor("white")
 
 # Update expressions later
-display.register_shape(expressions(count)) #image
+display.register_shape(expressions[count]) #image
 
 cat = turtle.Turtle()
-cat.shape(expressions(count)) #image
+cat.shape(expressions[count]) #image
 cat.speed(0)
 
 click = 0
