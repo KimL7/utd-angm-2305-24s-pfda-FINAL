@@ -29,20 +29,27 @@ pygame.mixer.init()
 audio_file = "meow.mp3" # Sound
 click_sound = pygame.mixer.Sound(audio_file)
 
+display.addshape("paw.gif") # Paw Image
+
 def clicked(x, y):
     global click
     global count
-    global cat
 
     click += 1
     count += 1
 
     # Click sound effect
     click_sound.play()
-
+    
     if count % 10 == 0:
         next_index = (expressions.index(cat.shape()) + 1) % len(expressions)
         cat.shape(expressions[next_index])
+    
+    paw = turtle.Turtle()
+    paw.shape("paw.gif")
+    paw.penup()
+    paw.goto(x, y)
+    paw.stamp() 
 
     pen.clear()
     pen.write(f"Clicks: {click}", align="center", font=("Verdana", 40, "normal")) # Text
