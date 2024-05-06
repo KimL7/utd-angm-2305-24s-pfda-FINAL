@@ -29,7 +29,17 @@ pygame.mixer.init()
 audio_file = "meow.mp3" # Sound
 click_sound = pygame.mixer.Sound(audio_file)
 
-display.addshape("paw.gif") # Paw Image
+display.addshape("paw.gif") # Paw image
+
+paw = turtle.Turtle()
+paw.shape("paw.gif")
+paw.penup()
+paw.hideturtle()
+
+def shake():
+    for _ in range(2):
+        cat.setpos(cat.xcor() + 2, cat.ycor())
+        cat.setpos(cat.xcor() - 2, cat.ycor())
 
 def clicked(x, y):
     global click
@@ -45,14 +55,13 @@ def clicked(x, y):
         next_index = (expressions.index(cat.shape()) + 1) % len(expressions)
         cat.shape(expressions[next_index])
     
-    paw = turtle.Turtle()
-    paw.shape("paw.gif")
-    paw.penup()
     paw.goto(x, y)
-    paw.stamp() 
-
+    paw.stamp()
+    paw.clearstamp(paw.stamp())
     pen.clear()
     pen.write(f"Clicks: {click}", align="center", font=("Verdana", 40, "normal")) # Text
+
+    shake()
 
 cat.onclick(clicked)
 
