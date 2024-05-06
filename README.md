@@ -1,43 +1,14 @@
-# Title
-Cat Expression Clicker
+# Cat Expressions!
 
-## Repository
-<Link https://github.com/KimL7/utd-angm-2305-24s-pfda-FINAL>
+## Demo
+Demo Video: <https://youtu.be/_34JghGZlXk?si=Cu1UGc-RUbSlNmHF>
+
+## GitHub Repository
+GitHub Repo: <https://github.com/KimL7/utd-angm-2305-24s-pfda-FINAL>
 
 ## Description
-My game proposal is a clicker game, except it's a cat, and the face changes every few clicks. It's relevant to media because clicker games used to be popular during the early 2010s.
+Cat Expression is a clicker game that includes a cat's face. Every time the cat's face is clicked on, a meow sound effect plays, it slightly shakes and a paw stamp is left where the click was made. Additonally, there is a counter above the cat that keeps track of all the clicks the player has made overtime. After the 10th click, the cat's expression changes to something new and by the 40th click, it loops back to the first expression. Lastly, there is a red background with a white fish patthern. I was able to make my project with the help of turtle and pygame. 
 
-## Features
-- Cat & Expressions
-	- I will have multiple images of a cat that I created. Each will be a unique expression and change through a counter system.
-- Sound Effects
-	- I want sound effects to play per click. I will execute this through a 3rd party feature called "playsound."  
-- Visual Effects
-	- There will be a few visual effects that occur per click. I will execute this feature through pygame.
+Inside the src folder is any image used to create the project. For example, placeholder.gif is the cat's first expression and placeholder4.gif is the last before it loops to the first. paw.gif is the image used for the paw stamp, and meow.mp3 is a sound bite from a Minecraft cat that plays per click.
 
-## Challenges
-- I'll have to learn how to add pngs, but I might use turtle instead.
-- I need to learn how to code sound effects through python.
-- I need to learn how to implement extra visual effects.
-
-## Outcomes
-Ideal Outcome:
--  The ideal outcome for my project is for a game where you click on a cat's face, and it keeps count of your clicks on the side. Additionally, I want the cat's expression to change depending on how often you've clicked. Lastly, I'd like to implement visual "effects" and sounds that occur when you click on the cat. For example, a sound effect occuring every click or milestone, miniature cats shooting out the main cat per click, background changing colors, and/or the main cat wobbling when clicked on.
-
-Minimal Viable Outcome:
-- The bare essentials for a good working outcome is a visual counter on the side and a cat who's expression changes per 10 clicks. Sound effects needed.
-
-## Milestones
-
-- Week 1
-  1. Implement cat design.
-  2. Implement mouse click counter.
-
-- Week 2
-  1. Implement expression changing capabilities.
-  2. Add changing backgrounds and cat wobble.
-
-- Week 3 (Final)
-  1. Implement sound effects.
-  2. Add any extra visual "effects".
-  3. Polish and clean code if need be.
+If there is a few things I could improve, is adding more expressions so that the player is motivated to play past the 40th click. Additonally, I would have changed the mouse cursor to the same paw image used to the stamp so that it looks more polished. Lastly, adding a repatitive moving background would have made the game look less static. 
